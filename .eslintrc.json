@@ -1,0 +1,98 @@
+{
+  "env": {
+    "es6": true,
+    "node": false
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/all"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prefer-es6-class": "error",
+    "indent": [
+      "error",
+      4
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-console": [
+      "warn"
+    ],
+    "class-methods-use-this": [
+      "error"
+    ],
+    "consistent-return": [
+      "error"
+    ],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "dot-notation": [
+      "error"
+    ],
+    "eqeqeq": [
+      "error"
+    ],
+    "no-eval": [
+      "error"
+    ],
+    "no-floating-decimal": [
+      "error"
+    ],
+    "no-magic-numbers": [
+      0,
+      {
+        "ignore": [
+          0,
+          1
+        ],
+        "ignoreArrayIndexes": true,
+        "enforceConst": true
+      }
+    ],
+    "no-return-assign": [
+      "error"
+    ],
+    "no-warning-comments": [
+      "error",
+      {
+        "terms": [
+          "todo",
+          "fixme"
+        ],
+        "location": "anywhere"
+      }
+    ],
+    "no-unused-vars": [
+      "off"
+    ],
+    "no-undef": [
+      "off"
+    ]
+  }
+}
